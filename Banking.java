@@ -30,7 +30,7 @@ class Banking
 	public static void deposit()
 	{
 		System.out.println("enter your deposit amount: ");
-		//Scanner obj1=new Scanner(System.in);
+		Scanner obj1=new Scanner(System.in);
 		int dep=obj1.nextInt();
 		Banking.b=Banking.b+dep;     //static variable-->classname.variable name
 		System.out.println("b= "+b);
