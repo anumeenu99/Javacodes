@@ -14,15 +14,17 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.1.0</version>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
-					<mainClass>project1.HelloWorld</mainClass>
+					<archive>
+						<manifest>
+							<mainClass>project1.HelloWorld</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
