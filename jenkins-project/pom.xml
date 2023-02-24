@@ -3,4 +3,26 @@
   <groupId>com.obsqura</groupId>
   <artifactId>jenkins-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<mainClass>project1.HelloWorld</mainClass>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 </project>
